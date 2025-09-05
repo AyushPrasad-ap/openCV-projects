@@ -1,0 +1,76 @@
+# -------- Python & virtual envs --------
+# ignore common virtual environment folders (matches anywhere)
+venv/
+.venv/
+env/
+ENV/
+**/venv/
+**/.venv/
+
+# Byte-compiled / caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.cache/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# -------- IDE / editor / OS files --------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# -------- Jupyter --------
+.ipynb_checkpoints/
+
+# -------- Secret / env files --------
+.env
+.env.*          # e.g. .env.local, .env.dev
+
+# -------- Logs & runtime files --------
+*.log
+*.sqlite
+*.db
+coverage.xml
+htmlcov/
+
+# -------- Data / models / outputs (common for CV projects) --------
+# ignore large datasets, model weights, outputs and videos
+data/
+datasets/
+dataset/
+models/
+weights/
+checkpoints/
+*.ckpt
+*.pth
+*.pt
+*.h5
+outputs/
+output/
+results/
+*.mp4
+*.avi
+*.mov
+captures/
+
+# If you want to keep small example images in repo but not big data,
+# add specific files to repo and keep the rest in the ignored folders.
+
+# -------- Misc --------
+*.zip
+*.tar.gz
+__pycache__/
