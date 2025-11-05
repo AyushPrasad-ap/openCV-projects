@@ -17,10 +17,10 @@ widthImg  = 480
 
 # Get the absolute path of the folder where main.py is located
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-scanned_folder = os.path.join(BASE_DIR, "Scanned")
+output_folder = os.path.join(BASE_DIR, "output")
 
-# Create the Scanned folder next to main.py if it doesn’t exist
-os.makedirs(scanned_folder, exist_ok=True)
+# Create the output folder next to main.py if it doesn’t exist
+os.makedirs(output_folder, exist_ok=True)
 
 
  
@@ -89,7 +89,7 @@ while True:
     # SAVE IMAGE WHEN 's' key is pressed
     if cv2.waitKey(1) & 0xFF == ord('s'):
         if imgWarpColored is not None:
-            file_path = os.path.join(scanned_folder, f"output{count}.jpg")
+            file_path = os.path.join(output_folder, f"output{count}.jpg")
             cv2.imwrite(file_path, imgWarpColored)
             cv2.rectangle(stackedImage,
                           ((int(stackedImage.shape[1] / 2) - 230),
