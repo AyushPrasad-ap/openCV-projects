@@ -87,7 +87,7 @@ class HandDetector:
         return fingers
 
 
-    def find_distance(self, p1, p2, frame, draw=True, r=15, t=3):
+    def find_distance(self, p1, p2, frame, draw=True, r=10, t=3):
         x1, y1 = self.lm_list[p1][1:]
         x2, y2 = self.lm_list[p2][1:]
         cx, cy = (x1 + x2) // 2, (y1 + y2) // 2
